@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tip Calculator </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1> Tip Calculator </h1>
+            <div id="Calculator">
+                <form>
+                    <p>
+                        How much was the Bill?
+                    </p>
+                    $ <input placeholder="Bill Amount" id="cost" type="text">
+                    <p>
+                      Quality of Service?
+                    </p>
+                    <select id="qualityMult">
+                        <option disabled selected value="-1"> -- Rate Your Service -- </option>
+                        <option value=".3"> 30&#37 Absolutely Phenomenal </option>
+                        <option value=".25"> 25&#37 Fantastic </option>
+                        <option value=".20"> 20&#37 Good </option>
+                        <option value=".15"> 15&#37 Average </option>
+                        <option value=".10"> 10&#37 Poor </option>
+                        <option value=".5"> 5&#37 Dreadful </option>
+                        <option value=".0"> 0&#37 Dined And Dashed </option>
+                    </select>
+                 </form>
+                 <p>
+                     How many people are splitting the bill?
+                 </p>
+                 <input placeholder="Number of People" type="text" id="amountPpl"> People
+                 <button type="button" id="calculate"> Give me the tip! </button>
+            </div>
+            <!-- end of calculator -->
+            <div id="totalTip">
+            <div id="tip" class="results">$0.00<small> Tip</small></div>
+            <div id="perPerson" class="results">$0.00<small> Per Person</small></div>
+            <div id="total">$0.00<small> Total</small></div>
+            </div>
+        <!--end of container -->
+        </div>
+        <script type="text/javascript" src="tipcalculator.js"></script>
+    </body>
+</html>
